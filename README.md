@@ -15,6 +15,19 @@ This project simulates a healthcare data platform handling sensitive synthetic e
 
     Leakage and Overfitting Defenses: Implements strict data segregation via stratified sampling splits and structurally regulates tree depths (max_depth=6) to prevent machine learning models from over-memorizing synthetic noise or experiencing data contamination.
 
+📁 Repository Structure
+
+├── lakehouse/                 # Local Lakehouse storage directory
+│   ├── bronze/                # Raw snapshot parquet landing directory
+│   ├── silver/                # De-identified, clean data directory
+│   └── gold/                  # Flattened, one-hot encoded ML feature matrix
+│   └── metadata.db            # Embedded DuckDB governance tracking catalog
+├── bronze_ingestion.py        # Phase 1: Dynamic dataset extraction & loading
+├── silver_cleansing.py         # Phase 2: Schema normalization & cryptographic masking
+├── gold_features.py           # Phase 3: Analytical feature transformation
+├── gold_ml_engine.py          # Phase 4: Model evaluation, verification, and logging
+└── README.md                  # System overview and analytics summary
+
     🚀 Quick Start & Execution
 1. Prerequisites & Environment Setup
 
