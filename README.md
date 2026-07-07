@@ -2,32 +2,7 @@
 An end-to-end, production-grade Medallion Architecture (Bronze\Silver\Gold) data pipeline designed to ingest complex clinical datasets, enforce strict data privacy boundaries via cryptographic pseudonymization, and train an audited, explainable machine learning model.
 This project simulates a healthcare data platform handling sensitive synthetic epilepsy and neurological disorder records, ensuring total compliance with data minimization and privacy frameworks (such as HIPAA).
 
-🏗️ System Architecture
-
-[Hugging Face API] 
-       │
-       ▼ (Extract)
-┌────────────────────────────────────────────────────────┐
-│ BRONZE LAYER: Immutable Parquet Ingestion Zone         │
-└────────────────────────────────────────────────────────┘
-       │
-       ▼ (Clean & Cryptographically Hash PII)
-┌────────────────────────────────────────────────────────┐
-│ SILVER LAYER: Secure Trust Boundary (HMAC-SHA256)      │
-└────────────────────────────────────────────────────────┘
-       │
-       ▼ (One-Hot Encode & Materialize Feature Matrix)
-┌────────────────────────────────────────────────────────┐
-│ GOLD LAYER: Optimized Analytical / ML-Ready Zone       │
-└────────────────────────────────────────────────────────┘
-       │
-       ▼ (Train & Register Model Meta-Metrics)
-┌────────────────────────────────────────────────────────┐
-│ ML ENGINE: Audited Random Forest Risk Classification   │
-└────────────────────────────────────────────────────────┘
-       │
-       ▼
-[DuckDB Metadata Ledger & Governance Logs]
+<img width="663" height="820" alt="image" src="https://github.com/user-attachments/assets/19896e0e-f290-4f9b-95fa-b94d10a56c1f" />
 
 
 🔒 Key Security & Engineering Features
