@@ -95,3 +95,7 @@ The pipeline reports the top structural variables steering clinical risk traject
     Feature: history_of_trauma_True - Weight Influence: 0.1104
 
     Feature: eeg_abnormality_focal - Weight Influence: 0.0912
+
+pytest validation
+<img width="1819" height="184" alt="image" src="https://github.com/user-attachments/assets/e6443245-6299-4407-84fd-ee0209d76ee1" />
+
